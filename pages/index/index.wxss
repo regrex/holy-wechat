@@ -1,0 +1,105 @@
+/**index.wxss**/
+.header {
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  background: #4caf50 url('../../static/bg.png') no-repeat center center;
+  background-size: contain;
+  /*background-color: #4caf50;*/
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 20rpx;
+}
+
+.logo-title {
+  font-size: 2rem;
+  color: #FFEB3B;
+}
+
+.logo-text {
+  color: white;
+}
+
+.holy-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.holy-item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  background-color: #242323;
+  padding-top: 30rpx;
+}
+
+.holy-title {
+  position: absolute;
+  color: #333;
+  background: rgba(205, 220, 57, 0.7);
+  padding: 8rpx 10rpx;
+}
+
+.holy-info {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  background: rgba(255, 255, 255, 0.61);
+}
+
+.like-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
+}
+
+.like-num {
+  margin-right: 20rpx;
+}
+
+.comment-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
+}

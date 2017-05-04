@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <!--<view  bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>-->
+    <view class="logo">
+      <image class="logo-icon" src="../../static/logo.png" background-size="cover"></image>
+      <text class="logo-text">记录生活，分享喜悦，定格美好</text>
+    </view>
+  </view>
+  <view class="holy-list">  
+    <view class="holy-item" wx:for="{{holyList}}" wx:for-index="hIndex" wx:key="hIndex" wx:for-item="holyItem">
+      <text class="holy-title">{{holyItem.title}}</text>
+      <image src="{{holyItem.thumbnails}}" background-size="cover"></image>
+      <view class="holy-info">
+        <view class="author-info">
+          <image class="author-avatar" src="{{holyItem.user_gravatar}}" background-size="cover"></image>
+          <text class="author-name">{{holyItem.user_name}}</text>
+        </view>
+        <view class="holy-meta">
+          <image class="like-icon" src="../../static/like.png" background-size="cover"></image>
+          <text class="like-num">{{holyItem.like_num}}</text>
+          <image class="comment-icon" src="../../static/comment.png" background-size="cover"></image>
+          <text class="comment-num">{{holyItem.comment_num}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
